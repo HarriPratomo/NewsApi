@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/solid_black"
+    tools:context=".activity.Detail_News_Activity">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/rect_filter">
+
+        <ImageView
+            android:src="@drawable/placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:id="@+id/image_news"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/source_name"
+            android:text="Detik.com"
+            android:fontFamily="@font/gilroy_bold"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:text="TESGDVDVDBBDBNDNNDNDND"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gilroy_bold"
+            android:maxLines="3"
+            android:id="@+id/txtNewsTitle"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+<!--        <view-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/grey"/>-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtAuthor"
+            android:text="Harri Pratomo"
+            android:fontFamily="@font/gilroy"
+            android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/source_names"
+                android:text="detik.com"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/gilroy_bold"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_release"
+            android:fontFamily="@font/gilroy"
+            android:textColor="@color/grey"
+            android:text="Minggu, 20 April 2020"/>
+        <TextView
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/content_news"
+            android:fontFamily="@font/gilroy"
+            android:textColor="@color/white"
+            android:text="@string/content"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

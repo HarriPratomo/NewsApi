@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/rect_filter">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:textColor="#FF9800"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name_company"
+                    android:text="Kompas TV"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textSize="17sp"/>
+                <TextView
+                    android:id="@+id/headlines_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:text="Sejumlah Ttempat terdampak Corona menjadi salah satu berita"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/url_company"
+                    android:text="www.google.com"
+                    android:textColor="#FF5722"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textSize="14sp"/>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/gilroy"/>
+                    <TextView
+                        android:id="@+id/country_from"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Indonesia"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

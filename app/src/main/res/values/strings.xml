@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NewsAPI</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="headlines">Headline</string>
+    <string name="semua">Berita Indonesia</string>
+    <string name="data">Sumber Berita</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content">dfjhfjbjbjbfdfdfdfdfdfdfdf</string>
+</resources>
